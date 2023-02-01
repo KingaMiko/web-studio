@@ -1,0 +1,32 @@
+.whatwedo {
+  display: flex;
+  justify-content: center;
+  &__item {
+    margin-right: 30px;
+    position: relative;
+  }
+  &__item:last-child {
+    margin-right: 0px;
+  }
+}
+
+.whatwedo-layer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__description {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+  }
+}
