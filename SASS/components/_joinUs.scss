@@ -1,4 +1,6 @@
 .joinus {
+  margin-bottom: 60px;
+
   &__title {
     font-weight: 700;
     font-size: 14px;
@@ -10,7 +12,7 @@
   }
   &__list {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
   }
   &__item {
     display: flex;

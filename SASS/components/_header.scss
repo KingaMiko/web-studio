@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 80px;
+  min-height: 60px;
   background-color: var(--primary-bgd-color);
   z-index: 1;
   &__container {
@@ -12,6 +12,7 @@
     align-items: center;
   }
 }
+
 .portfolio-header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
   position: fixed;
@@ -24,7 +25,7 @@
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -32,12 +33,14 @@
 .header-menu {
   display: flex;
   margin-left: 93px;
+
   &__item {
     color: var(--header-text-color);
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.02em;
   }
+
   .header-menu__item {
     &:not(:last-child) {
       margin-right: 46px;
@@ -49,6 +52,9 @@
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__link--active {
@@ -71,6 +77,9 @@
   display: flex;
   margin-left: auto;
   gap: 50px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   &__link {
     display: flex;
     align-items: center;

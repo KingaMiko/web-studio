@@ -1,16 +1,19 @@
 .footer {
   background-color: var(--secondary-bgd-color);
   padding-top: 60px;
-  padding-bottom: 20px;
+  //padding-bottom: 20px;
+  padding-bottom: 60px;
   &__logo-adress {
     margin-bottom: 20px;
   }
 }
 
 .footer__container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  display: block;
+  text-align: center;
+  align-items: center;
+  // justify-content: flex-start;
+  // align-items: flex-start;
 }
 
 .adress-footer {
@@ -19,12 +22,12 @@
   line-height: 2;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-right: 70px;
-  width: 246px;
+  // margin-right: 70px;
+  // width: 246px;
   white-space: nowrap;
 }
 .adress {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   &__item {
     margin-bottom: 9px;
   }

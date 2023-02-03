@@ -1,25 +1,29 @@
 .newsletter-form {
-  margin-left: 78px;
+  margin: 0;
+  //margin-left: 78px;
+
   &__label {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+    display: block;
     text-transform: uppercase;
     font-family: var(--main-font-family);
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     color: var(--secondary-text-color);
     margin-bottom: 20px;
   }
   &__field {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
   &__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     font-size: 16px;
     line-height: 1.25;
@@ -30,7 +34,8 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding-left: 16px;
-    margin-right: 12px;
+    //margin-right: 12px;
+    margin-bottom: 20px;
   }
   &__input:focus-within {
     border: 1px solid var(--third-bgd-color);
