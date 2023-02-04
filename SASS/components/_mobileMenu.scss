@@ -1,16 +1,39 @@
 .mobile-menu {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     display: none;
   }
 }
 .mobile-container {
   position: relative;
+  display: flex;
+  margin-left: auto;
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    display: none;
+  }
+  @include desktop {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .container.page-header__container {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  width: 480px;
+  width: 100%;
+  @include tablet {
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    display: none;
+  }
+  @include desktop {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
 }
 
 .menu-toggle-open {
@@ -23,7 +46,11 @@
   padding: 0;
   outline: none;
   background-color: transparent;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }
+
 .menu-toggle {
   top: 21px;
   right: 25px;
@@ -41,7 +68,7 @@
   color: var(--accent-color);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .menu-toggle {
     display: none;
   }
