@@ -48,6 +48,7 @@
   @include tablet {
     margin-left: 83px;
     font-size: 12px;
+    padding-right: 150px;
   }
   @include desktop {
     font-size: 14px;
@@ -98,16 +99,13 @@
   }
   @include tablet {
     display: block;
+    width: 100%;
     margin: auto;
     font-size: 12px;
-    position: relative;
-    top: 5px;
-    left: 150px;
   }
   @include desktop {
     font-size: 14px;
     display: flex;
-    position: relative;
   }
 
   &__link {
