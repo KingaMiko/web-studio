@@ -1,5 +1,8 @@
 .joinus {
   margin-bottom: 60px;
+  @include desktop {
+    margin-right: 78px;
+  }
 
   &__title {
     font-weight: 700;

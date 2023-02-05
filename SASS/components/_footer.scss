@@ -12,13 +12,16 @@
   display: block;
   text-align: center;
   align-items: center;
-  // justify-content: flex-start;
-  // align-items: flex-start;
   @include tablet {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+  }
+  @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
   }
 }
 
@@ -28,13 +31,13 @@
   line-height: 2;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-
-  // margin-right: 70px;
-  // width: 246px;
   white-space: nowrap;
   @include tablet {
     margin-right: 144px;
-    max-width: 246px;
+    max-width: 253px;
+  }
+  @include desktop {
+    margin-right: 70px;
   }
 }
 
