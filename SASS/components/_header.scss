@@ -97,12 +97,14 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   @include tablet {
     display: block;
     width: 100%;
     margin: auto;
     font-size: 12px;
   }
+
   @include desktop {
     font-size: 14px;
     display: flex;
@@ -115,10 +117,8 @@
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    @include tablet {
-      margin-bottom: 10px;
-    }
   }
+
   &__icon-envelope {
     margin-right: 10px;
     fill: #afb1b8;

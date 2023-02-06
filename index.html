@@ -34,55 +34,54 @@
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-          <svg width="24" height="16" aria-label="Mobile menu switcher">
+            <svg width="24" height="16" aria-label="Mobile menu switcher">
               <use
                 class="menu-toggle__icon-open"
                 href="./images/icons/icons.svg#icon-menu_24px"
-               
               ></use>
-              
             </svg>
           </button>
 
-        <!--page navigation-->
-        <nav>
-          <ul class="header-menu">
-            <li class="header-menu__item">
-              <a
-                href="./index.html"
-                class="link header-menu__link header-menu__link--active"
-                >Agencja</a
-              >
+          <!--page navigation-->
+          <nav>
+            <ul class="header-menu">
+              <li class="header-menu__item">
+                <a
+                  href="./index.html"
+                  class="link header-menu__link header-menu__link--active"
+                  >Agencja</a
+                >
+              </li>
+              <li class="header-menu__item">
+                <a href="./portfolio.html" class="link header-menu__link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="link header-menu__link">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contact">
+            <li class="contact__item">
+              <a href="mailto:info@devstudio.com" class="link contact__link">
+                <svg class="contact__icon-envelope" width="16px" height="12px">
+                  <use href="./images/icons/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="header-menu__item">
-              <a href="./portfolio.html" class="link header-menu__link"
-                >Portfolio</a
+            <li class="contact-nav">
+              <a href="tel:+48111111111" class="link contact__link"
+                ><svg class="contact__icon-smartphone" width="10" height="16">
+                  <use href="./images/icons/icons.svg#icon-smartphone"></use>
+                </svg>
+                +48 111 111 111</a
               >
-            </li>
-            <li class="header-menu__item">
-              <a href="#" class="link header-menu__link">Kontakt</a>
             </li>
           </ul>
-        </nav>
-
-        <ul class="contact">
-          <li class="contact__item">
-            <a href="mailto:info@devstudio.com" class="link contact__link">
-              <svg class="contact__icon-envelope" width="16px" height="12px">
-                <use href="./images/icons/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contact-nav">
-            <a href="tel:+48111111111" class="link contact__link"
-              ><svg class="contact__icon-smartphone" width="10" height="16">
-                <use href="./images/icons/icons.svg#icon-smartphone"></use>
-              </svg>
-              +48 111 111 111</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <!-- HERO -->
@@ -158,7 +157,11 @@
           <ul class="whatwedo">
             <li class="whatwedo__item">
               <img
-                src="./images/whatwedo/img.jpg"
+                srcset="
+                  ./images/whatwedo/services-1.jpg    1x,
+                  ./images/whatwedo/services-1-2x.jpg 2x,
+                  ./images/whatwedo/services-1-3x.jpg 3x
+                "
                 alt="Zbliżenie na dłonie pracującego programisty"
                 width="370"
                 height="294"
@@ -169,7 +172,11 @@
             </li>
             <li class="whatwedo__item">
               <img
-                src="./images/whatwedo/img-1.jpg"
+                srcset="
+                  ./images/whatwedo/services-2.jpg    1x,
+                  ./images/whatwedo/services-2-2x.jpg 2x,
+                  ./images/whatwedo/services-2-3x.jpg 3x
+                "
                 alt="Projektant UI tworzący aplikację na smartfona"
                 width="370"
                 height="294"
@@ -180,7 +187,11 @@
             </li>
             <li class="whatwedo__item">
               <img
-                src="./images/whatwedo/img-2.jpg"
+                srcset="
+                  ./images/whatwedo/services-3.jpg    1x,
+                  ./images/whatwedo/services-3-2x.jpg 2x,
+                  ./images/whatwedo/services-3-3x.jpg 3x
+                "
                 alt="Tablet z graficznym wyborem kolorów dla projektanta stron internetowych"
                 width="370"
                 height="294"
@@ -198,8 +209,8 @@
           <h2 class="section__title">Nasz zespół</h2>
           <ul class="ourteam">
             <li class="ourteam__item">
-                <picture class="ourteam__image">
-                  <source
+              <picture class="ourteam__image">
+                <source
                   srcset="
                     ././images/ourteam/ourteam-1.jpg    1x,
                     ././images/ourteam/ourteam-1-2x.jpg 2x,
@@ -223,11 +234,11 @@
                   "
                   media="(min-width:320px)"
                 />
-              <img
-                src="././images/ourteam/ourteam-1.jpg"
-                alt="Zdjęcie Johna Doe"
-              />
-</picture>
+                <img
+                  src="././images/ourteam/ourteam-1.jpg"
+                  alt="Zdjęcie Johna Doe"
+                />
+              </picture>
               <div class="ourteam__description">
                 <h3 class="ourteam__name">John Doe</h3>
                 <p class="ourteam__speciality">Product Designer</p>
@@ -306,14 +317,13 @@
                     </a>
                   </li>
                 </ul>
-                
+
                 <!--social link end-->
               </div>
             </li>
             <li class="ourteam__item">
-              
-                <picture class="ourteam__image">
-                  <source
+              <picture class="ourteam__image">
+                <source
                   srcset="
                     ././images/ourteam/ourteam-2.jpg    1x,
                     ././images/ourteam/ourteam-2-2x.jpg 2x,
@@ -337,11 +347,11 @@
                   "
                   media="(min-width:320px)"
                 />
-              <img
-                src="././images/ourteam/ourteam-2.jpg"
-                alt="Zdjęcie Johna Doe"
-              />
-</picture>
+                <img
+                  src="././images/ourteam/ourteam-2.jpg"
+                  alt="Zdjęcie Johna Doe"
+                />
+              </picture>
               <div class="ourteam__description">
                 <h3 class="ourteam__name">John Doe 2</h3>
                 <p class="ourteam__speciality">Frontend Developer</p>
@@ -424,13 +434,13 @@
                     </a>
                   </li>
                 </ul>
-              
+
                 <!--social link end-->
               </div>
             </li>
-            <li class="ourteam__item"> 
-                <picture class="ourteam__image">
-                  <source
+            <li class="ourteam__item">
+              <picture class="ourteam__image">
+                <source
                   srcset="
                     ././images/ourteam/ourteam-3.jpg    1x,
                     ././images/ourteam/ourteam-3-2x.jpg 2x,
@@ -454,11 +464,11 @@
                   "
                   media="(min-width:320px)"
                 />
-              <img
-                src="././images/ourteam/ourteam-3.jpg"
-                alt="Zdjęcie Johna Doe"
-              />
-</picture>
+                <img
+                  src="././images/ourteam/ourteam-3.jpg"
+                  alt="Zdjęcie Johna Doe"
+                />
+              </picture>
               <div class="ourteam__description">
                 <h3 class="ourteam__name">John Doe 3</h3>
                 <p class="ourteam__speciality">Marketing</p>
@@ -541,14 +551,13 @@
                     </a>
                   </li>
                 </ul>
-           
+
                 <!--social link end-->
               </div>
             </li>
             <li class="ourteam__item">
-           
-                <picture class="ourteam__image">
-                  <source
+              <picture class="ourteam__image">
+                <source
                   srcset="
                     ././images/ourteam/ourteam-4.jpg    1x,
                     ././images/ourteam/ourteam-4-2x.jpg 2x,
@@ -572,11 +581,11 @@
                   "
                   media="(min-width:320px)"
                 />
-              <img
-                src="././images/ourteam/ourteam-4.jpg"
-                alt="Zdjęcie Johna Doe"
-              />
-</picture>
+                <img
+                  src="././images/ourteam/ourteam-4.jpg"
+                  alt="Zdjęcie Johna Doe"
+                />
+              </picture>
               <div class="ourteam__description">
                 <h3 class="ourteam__name">John Doe 4</h3>
                 <p class="ourteam__speciality">UI Designer</p>
@@ -659,7 +668,7 @@
                     </a>
                   </li>
                 </ul>
-              
+
                 <!--social link end-->
               </div>
             </li>
@@ -851,29 +860,27 @@
 
           <!-- newsletter -->
 
-          
-            <form class="newsletter-form">
-              <label class="newsletter-form__label" for="newsletter_email"
-                >Zapisz się do newslettera</label
-              >
-              <div class="newsletter-form__field">
-                <input
-                  class="newsletter-form__input"
-                  type="email"
-                  name="email"
-                  id="newsletter_email"
-                  placeholder="E-mail"
-                />
+          <form class="newsletter-form">
+            <label class="newsletter-form__label" for="newsletter_email"
+              >Zapisz się do newslettera</label
+            >
+            <div class="newsletter-form__field">
+              <input
+                class="newsletter-form__input"
+                type="email"
+                name="email"
+                id="newsletter_email"
+                placeholder="E-mail"
+              />
 
-                <button class="newsletter-form__button" type="submit">
-                  Zapisz się
-                  <svg class="newsletter-form__icon" width="24px" height="24px">
-                    <use href="./images/icons/icons.svg#icon-icon-send"></use>
-                  </svg>
-                </button>
-              </div>
-            </form>
-          
+              <button class="newsletter-form__button" type="submit">
+                Zapisz się
+                <svg class="newsletter-form__icon" width="24px" height="24px">
+                  <use href="./images/icons/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -980,67 +987,71 @@
         </form>
       </div>
     </div>
-<!-- mobile menu -->
+    <!-- mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button
-      type="button"
-      class="menu-toggle js-close-menu"
-    >
-      <svg width="18" height="18" aria-label="Mobile menu switcher">
-        <use class="menu-container__icon-cross" href="./images/icons/icons.svg#icon-close_24px"></use>
-      </svg>
-    </button>
+      <button type="button" class="menu-toggle js-close-menu">
+        <svg width="18" height="18" aria-label="Mobile menu switcher">
+          <use
+            class="menu-container__icon-cross"
+            href="./images/icons/icons.svg#icon-close_24px"
+          ></use>
+        </svg>
+      </button>
 
-    <ul class="menu-container__list">
-      <li class="menu-container__nav-item">
-        <a href="./index.html" class="link menu-container__nav-link menu-container__nav-link--active"
-          >Agencja</a
-        >
-      </li>
-      <li class="menu-container__nav-item">
-        <a href="./portfolio.html" class="link menu-container__nav-link"
-          >Portfolio</a
-        >
-      </li>
-      <li class="menu-container__nav-item">
-        <a href="" class="link menu-container__nav-link">Kontakt</a>
-      </li>
-    </ul>
-<div class="menu-container__contact">
-  <ul class="contact-list">
-    <li class="contact-list__item">
-      <a href="tel:+48111111111" class="link contact-list__link--accent"
-        >+48 111 111 111</a>
-    </li>
-    <li class="contact-list__item">
-      <a href="mailto:info@devstudio.com" class="link contact-list__link">info@devstudio.com
-      </a>
-    </li>
-    </ul>
-</div>
-<div class="menu-container__social-media">
-  <ul class="sm-list">
-    <li class="sm-list__item">
-      <a href="#" class="sm-list__link link">Instagram</a>
-    </li>
-    <li class="sm-list__item">
-      <a href="#" class="sm-list__link link">Twitter</a>
-    </li>
-    <li class="sm-list__item">
-      <a href="#" class="sm-list__link link">Facebook</a>
-    </li>
-    <li class="sm-list__item">
-      <a href="#" class="sm-list__link link">LinkedIn</a>
-    </li>
-  </ul>
-</div>
+      <ul class="menu-container__list">
+        <li class="menu-container__nav-item">
+          <a
+            href="./index.html"
+            class="link menu-container__nav-link menu-container__nav-link--active"
+            >Agencja</a
+          >
+        </li>
+        <li class="menu-container__nav-item">
+          <a href="./portfolio.html" class="link menu-container__nav-link"
+            >Portfolio</a
+          >
+        </li>
+        <li class="menu-container__nav-item">
+          <a href="" class="link menu-container__nav-link">Kontakt</a>
+        </li>
+      </ul>
+      <div class="menu-container__contact">
+        <ul class="contact-list">
+          <li class="contact-list__item">
+            <a href="tel:+48111111111" class="link contact-list__link--accent"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li class="contact-list__item">
+            <a href="mailto:info@devstudio.com" class="link contact-list__link"
+              >info@devstudio.com
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-container__social-media">
+        <ul class="sm-list">
+          <li class="sm-list__item">
+            <a href="#" class="sm-list__link link">Instagram</a>
+          </li>
+          <li class="sm-list__item">
+            <a href="#" class="sm-list__link link">Twitter</a>
+          </li>
+          <li class="sm-list__item">
+            <a href="#" class="sm-list__link link">Facebook</a>
+          </li>
+          <li class="sm-list__item">
+            <a href="#" class="sm-list__link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
