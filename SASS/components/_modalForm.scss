@@ -203,6 +203,9 @@
     height: 15px;
     border: 2px solid rgba(33, 33, 33, 1);
     border-radius: 3px;
+    @include desktop {
+      left: -20px;
+    }
   }
   &__content:checked + .checkbox__field::before {
     background-image: url(/goit-markup-hw-06/images/icons/icons.svg#icon-Vector-1);
@@ -219,6 +222,9 @@
     //left -17x
     left: 8px;
     fill: var(--secondary-text-color);
+    @include desktop {
+      left: -17px;
+    }
   }
   &__link {
     color: var(--accent-color);
